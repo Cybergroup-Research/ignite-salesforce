@@ -1,0 +1,57 @@
+{
+  "name": "node-red-contrib-salesforce",
+  "node-red": {
+    "nodes": {
+      "soql": "soql.js",
+      "sosl": "sosl.js",
+      "dml": "dml.js",
+      "chatter": "chatter.js",
+      "streaming": "streaming.js",
+      "obm": "obm.js",
+      "connection-config": "connection-config.js"
+    }
+  },
+  "version": "1.0.1",
+  "description": "A set of Node-RED nodes to interact with Salesforce and Force.com.",
+  "scripts": {},
+  "author": {
+    "name": "Ravi Kant Sharma",
+    "email": "ravi.sharma@cygrp.com",
+    "github": "Ravi-Kaushish"
+  },
+  "contributors": [
+    {
+      "name": "Stephan H. Wissel",
+      "email": "stephan@wissel.net",
+      "url": "https://wissel.net"
+    },
+    {
+      "name": "Srikanth Ramakrishnan",
+      "email": "srikanth.r@salesforce.com"
+    }
+  ],
+  "keywords": [
+    "salesforce",
+    "forcedotcom",
+    "Heroku",
+    "Ignite",
+    "@cgIgnite"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "faye": "^1.2.4",
+    "nforce8": "2.0.11",
+    "xml2js": "^0.4.23"
+  },  
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-mocha": "^6.2.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.2.2",
+    "node-red": "^1.0.3",
+    "node-red-node-test-helper": "^0.2.3",
+    "should": "^13.2.3",
+    "sinon": "^8.0.1",
+    "supertest": "^4.0.2"
+  }
+}

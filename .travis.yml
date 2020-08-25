@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 'node'
+  - 'lts/*'
+install:
+  - npm install
+cache:
+  directories:
+    - '$HOME/.npm'
+    - 'node_modules'
+after_failure:
+  - cat /home/travis/.npm/_logs/*.log
+deploy:
+  provider: npm
+  email: stw@linux.com
+  api_key: $NPM_TOKEN
+  on:
+    branch: master
